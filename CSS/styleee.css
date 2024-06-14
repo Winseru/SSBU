@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("Imagenes/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center; /* Centra el fondo horizontal y verticalmente */
+}
+
+header {
+    width: 1000px;
+    min-height: 300px;
+    background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
+    position: relative; /* Agregado */
+    z-index: 1; /* Agregado */
+}
+
+.Logo {
+    margin-left: 120px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.Logo2 {
+    margin-left: 65px;
+    margin-right: 80px;
+    margin-bottom: 90px;
+    width: 200px;
+    height: 140px;
+}
+
+.Logo3 {
+    margin-bottom: 129px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.menuH {
+    max-width: 1000px;
+    min-height: 50px;
+    background: black;
+    margin: 0 auto;
+    position: relative; /* Agregado */
+    z-index: 2; /* Agregado */
+}
+
+.menuH ul {
+     list-style: none;
+     display: flex;
+     justify-content: center;
+}
+
+.menuH a {
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.menuH a:hover {
+      background: #069;
+}
+
+.menuH ul ul {
+    display: none;
+    position: absolute;
+    z-index: 3; /* Agregado */
+}
+
+.menuH ul li:hover ul {
+   display: block;
+}
+
+.Banner {
+    max-width: 1000px;
+    min-height: 475px;
+    background: #ff0000bd;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 0; /* Agregado */
+}
+
+.BannerImg {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    animation: deslizar 35s linear infinite alternate;
+    min-height: 475px;
+}
+
+
+.menuV{
+ width: 300px;
+ min-height: 700px;
+ float: left;
+ background-size: cover;
+
+}
+
+.menuV ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.menuV a{
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    font-family: arial;
+    font-size: 18px;
+    background: #000;
+}
+
+
+.menuV a:hover{
+    box-shadow: inset 15px 30px 50px blue;
+}
+
+.menuV a:hover img{
+    animation: 1s rotacion 1;
+}
+
+
+@keyframes deslizar {
+    0% {
+        left: 100%;
+    }
+    90% {
+        left: -200%;
+    }
+    100% {
+        left: -200%;
+    }
+}
+
+.Contenedor {
+    max-width: 1000px;
+    min-height: 700px;
+    background: white;
+    margin: 0 auto;
+    
+}
+
+.menuV {
+    width: 300px;
+    min-height: 700px;
+    background: rgb(240, 231, 231);
+    float: left;
+}
+
+.Contenido {
+    width: 450px;
+    min-height: 700px;
+    background: white;
+    float: right;
+    margin-top: -700px;
+    padding-right: 360px;
+}
+
+.Contenido p{
+    margin-bottom: 50px;
+    font-family: arial;
+    font-size: 18px;
+    text-align: justify;
+    
+}
+
+
+
+
+footer {
+    max-width: 1000px;
+    min-height: 130px;
+    background: black;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
+    color: #fff;
+    text-align: center;
+    font-family: arial;
+    font-size: 18px;
+}
